@@ -2,4 +2,6 @@
 - hosts: all
   roles:   
     - { role: pi03_led_role }
-
+  tasks:
+  - debug:
+    msg: "before we run our role"
